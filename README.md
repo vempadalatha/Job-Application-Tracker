@@ -1,42 +1,76 @@
-# Job Application Tracker – Full Stack Mini Project
+# Job Application Tracker
 
-## 1. Project Overview
-This is a simple full-stack web application built as part of a mini project assignment.
-The application helps users track job applications by allowing them to create, view,
-update, and delete job application records.
+A full-stack web application built using **React (Frontend)** and **Django REST Framework (Backend)** that helps users track and manage their job applications efficiently.
 
-The project demonstrates CRUD operations using a React frontend and a Django backend.
+This project was developed as part of a **Full-Stack Developer Internship Assignment** to demonstrate practical skills in frontend-backend integration, REST APIs, and CRUD operations.
 
 ---
 
-## 2. Tech Stack and Tools
+## 🚀 Features
 
-### Backend
-- Python 3.11
-- Django
-- Django REST Framework
-- django-cors-headers
-- SQLite (default Django database)
+- Add new job applications
+- View all saved applications
+- Update application status (Applied / Interview / Offer / Rejected)
+- Delete job applications
+- Persistent data storage using SQLite
+- RESTful API architecture
+- Clean separation between frontend and backend
+
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
 - React (Vite)
+- JavaScript
 - Axios
-- JavaScript (ES6)
 
-### AI Tools Used
-- ChatGPT was used to assist with:
-  - Understanding Django REST Framework concepts
-  - Structuring React components
-  - Debugging errors and improving code clarity
+### Backend
+- Python
+- Django
+- Django REST Framework
+- SQLite
+- django-cors-headers
 
-All code was reviewed, understood, and manually tested.
+### Tools
+- VS Code
+- Git & GitHub
+- Postman
 
 ---
 
-## 3. Setup Instructions
-
-### Backend Setup
-
-1. Navigate to the backend folder:
-```bash
-cd backend
+## 📁 Project Structure
+job-application-tracker/
+│
+├── backend/
+│ ├── manage.py
+│ ├── backend/
+│ │ ├── init.py
+│ │ ├── settings.py
+│ │ ├── urls.py
+│ │ └── wsgi.py
+│ │
+│ ├── applications/
+│ │ ├── init.py
+│ │ ├── admin.py
+│ │ ├── apps.py
+│ │ ├── models.py
+│ │ ├── serializers.py
+│ │ ├── views.py
+│ │ ├── urls.py
+│ │ └── migrations/
+│ │
+│ └── requirements.txt
+│
+├── frontend/
+│ ├── package.json
+│ ├── vite.config.js
+│ └── src/
+│ ├── api.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── components/
+│ ├── ApplicationForm.jsx
+│ └── ApplicationList.jsx
+│
+└── README.md
