@@ -1,20 +1,20 @@
 # Job Application Tracker
 
-A full-stack web application built using **React (Frontend)** and **Django REST Framework (Backend)** that helps users track and manage their job applications efficiently.
+A simple and practical full-stack web application built using **React (Frontend)** and **Django REST Framework (Backend)** to help users track their job applications.
 
-This project was developed as part of a **Full-Stack Developer Internship Assignment** to demonstrate practical skills in frontend-backend integration, REST APIs, and CRUD operations.
+This project was developed as part of a **Full-Stack Developer Internship Assignment** to demonstrate core full-stack concepts such as CRUD operations, REST APIs, and frontend-backend integration.
 
 ---
 
 ## 🚀 Features
 
-- Add new job applications
-- View all saved applications
-- Update application status (Applied / Interview / Offer / Rejected)
-- Delete job applications
+- Add a job application (Company Name & Job Title)
+- View all job applications in a list
+- Edit an existing job application
+- Delete a job application
 - Persistent data storage using SQLite
-- RESTful API architecture
-- Clean separation between frontend and backend
+- RESTful backend API
+- Simple and clean user interface
 
 ---
 
@@ -40,20 +40,17 @@ This project was developed as part of a **Full-Stack Developer Internship Assign
 ---
 
 ## 📁 Project Structure
+
 job-application-tracker/
 │
 ├── backend/
 │ ├── manage.py
 │ ├── backend/
-│ │ ├── init.py
 │ │ ├── settings.py
 │ │ ├── urls.py
-│ │ └── wsgi.py
+│ │ └── init.py
 │ │
 │ ├── applications/
-│ │ ├── init.py
-│ │ ├── admin.py
-│ │ ├── apps.py
 │ │ ├── models.py
 │ │ ├── serializers.py
 │ │ ├── views.py
@@ -64,7 +61,6 @@ job-application-tracker/
 │
 ├── frontend/
 │ ├── package.json
-│ ├── vite.config.js
 │ └── src/
 │ ├── api.js
 │ ├── App.jsx
